@@ -1,12 +1,27 @@
+#include <ArduinoUnit.h>
+
 int led = 13;
 
-void setup() {                
-  pinMode(led, OUTPUT);     
+test(ok) 
+{
+  int x=3;
+  int y=3;
+  assertEqual(x,y);
 }
 
-void loop() {
-  digitalWrite(led, HIGH);   
-  delay(1000);               
-  digitalWrite(led, LOW);    
-  delay(1000);               
+test(bad)
+{
+  int x=3;
+  int y=3;
+  assertNotEqual(x,y);
+}
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Test::run();
 }

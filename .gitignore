@@ -1,1 +1,6 @@
 *.opensdf
+*.suo
+*.sdf
+Blinker/Visual Micro/Compile.vmps.xml
+Blinker/Visual Micro/Configuration.Debug.vmps.xml
+Blinker/Visual Micro/Upload.vmps.xml
