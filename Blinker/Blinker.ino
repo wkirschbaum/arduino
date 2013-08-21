@@ -1,27 +1,16 @@
 #include <ArduinoUnit.h>
+#include "Morse.h"
 
-int led = 13;
-
-test(ok) 
-{
-  int x=3;
-  int y=3;
-  assertEqual(x,y);
-}
-
-test(bad)
-{
-  int x=3;
-  int y=3;
-  assertNotEqual(x,y);
-}
+Morse morse(13);
 
 void setup()
 {
-  Serial.begin(9600);
 }
 
 void loop()
 {
-  Test::run();
+  morse.dot(); morse.dot(); morse.dot();
+  morse.dash(); morse.dash(); morse.dash();
+  morse.dot(); morse.dot(); morse.dot();
+  delay(3000);
 }

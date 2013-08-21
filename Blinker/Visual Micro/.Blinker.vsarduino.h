@@ -32,4 +32,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino\arduino.h"
 #include "C:\Users\Wilhelm\Projects\Arduino\Blinker\Blinker.ino"
+#include "C:\Users\Wilhelm\Projects\Arduino\Blinker\Morse.cpp"
+#include "C:\Users\Wilhelm\Projects\Arduino\Blinker\Morse.h"
 #endif
